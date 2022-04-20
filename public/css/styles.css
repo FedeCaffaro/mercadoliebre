@@ -204,8 +204,17 @@ main section h2{
     color: var(--main-dark-gray);
     font-size: 16px;
     margin-top: 30px;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
+.product:hover > .product__info > h3 {
+    opacity: 1;
+  }
+
+.product:hover > .product__info > i {
+    transform: rotate(-90deg);
+  }
 
 .discount{
     font-size: 14px;
